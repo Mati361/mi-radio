@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmitir en Vivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Mi Radio</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html#resumen">Resumen</a></li>
+                <li><a href="index.html#radio-vivo">Radio en Vivo</a></li>
+                <li><a href="index.html#clips">Clips de Videos</a></li>
+                <li><a href="index.html#ubicacion">Ubicación</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+                <li><a href="live.html#transmitir">Transmitir en Vivo</a></li>
+                <li><a href="live.html#subir-clips">Subir Clips</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <section id="transmitir">
+            <h1>Transmitir en Vivo</h1>
+            <button id="startRecording" onclick="startRecording()">Comenzar Transmisión</button>
+            <button id="stopRecording" onclick="stopRecording()" disabled>Detener Transmisión</button>
+            <p id="status">Estado: No transmitiendo</p>
+            <!-- Aquí irá el reproductor de transmisión en vivo -->
+        </section>
+        <section id="subir-clips">
+            <h1>Subir Clips</h1>
+            <input type="file" id="fileInput" accept="video/*" multiple>
+            <button onclick="uploadClips()">Subir</button>
+        </section>
+    </main>
+
+    <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=100064804148230" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/_ministeriolavozprofetica/" target="_blank">Instagram</a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

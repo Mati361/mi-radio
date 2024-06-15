@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Radio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Ministerio la voz profetica</div>
+        <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#resumen">Resumen</a></li>
+                <li><a href="#radio-vivo">Vivo</a></li>
+                <li><a href="#clips">Clips de Videos</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="resumen">
+            <h1>Resumen de mi Radio</h1>
+            <p>               
+¡Bienvenido a nuestra Radio en vivo de la Iglesia Ministerio la voz profetica! Sintoniza nuestras transmisiones en directo, disfruta de mensajes inspiradores y música que eleva el espíritu. 
+También puedes explorar nuestra sección de clips para contenido destacado. Únete a nuestra comunidad y mantente conectado a través de nuestras redes sociales. 
+¡Gracias por ser parte de nuestra familia!</p>
+        </section>
+
+        <section id="radio-vivo">
+            <h1>Radio en Vivo</h1>
+            <iframe src="URL_DE_TU_RADIO_STREAM" width="100%" height="100" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+        
+        <section id="clips">
+            <h1>Clips de Videos</h1>
+            <video id="myVideo" width="30%" height="240" controls>
+                <source src="./Clips/Clip 1.mp4" type="video/mp4">
+                Su navegador no soporta la etiqueta de vídeo.
+              </video>
+
+              <video id="myVideo" width="30%" height="240" controls>
+                <source src="./Clips/Clip 2.mp4" type="video/mp4">
+                Su navegador no soporta la etiqueta de vídeo.
+              </video>
+
+              <video id="myVideo" width="30%" height="240" controls>
+                <source src="./Clips/CLIP 3.mp4" type="video/mp4">
+                Su navegador no soporta la etiqueta de vídeo.
+              </video>
+              
+            <!-- Puedes añadir más divs de video-clip según sea necesario -->
+        </section>
+        
+
+        <section id="ubicacion">
+            <h1>Ubicación</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses!2sar!4v1718123420337!5m2!1ses!2sar!6m8!1m7!1sVZiVpG7LrGE5exZ4adrYoA!2m2!1d-34.55680424501189!2d-58.5716050813671!3f17.451482603185774!4f3.190425316570696!5f0.7820865974627469"
+             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+
+        <section id="contacto">
+            <h1>Contacto</h1>
+            <form id="contactForm" action="https://formspree.io/f/xrgnnpwl" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Pedido de Oración:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" id="submitBtn">Enviar</button>
+            </form>
+            <div id="statusMessage"></div>
+            
+        </section>
+        
+
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100064804148230" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/_ministeriolavozprofetica/" target="_blank">Instagram</a>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
